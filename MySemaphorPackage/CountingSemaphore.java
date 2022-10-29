@@ -1,3 +1,5 @@
+package MySemaphorPackage;
+
 public class CountingSemaphore {
     private int signal;
 

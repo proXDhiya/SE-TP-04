@@ -1,3 +1,5 @@
+package MySemaphorPackage;
+
 public class MyThread extends Thread{
     private String str;
     private CountingSemaphore s1;

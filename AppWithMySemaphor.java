@@ -1,4 +1,6 @@
-public class app {
+import MySemaphorPackage.*;
+
+public class AppWithMySemaphor {
     public static void main(String[] argc) {
         // Create Three Semaphores
         CountingSemaphore s1 = new CountingSemaphore(1);
