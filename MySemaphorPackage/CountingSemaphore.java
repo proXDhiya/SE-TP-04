@@ -14,13 +14,13 @@ public class CountingSemaphore {
     }
     
     // Function to wait for a signal
-    public synchronized void take() {
+    public synchronized void release() {
         this.signal++;
         this.notify();
     }
 
     // Function to release a signal
-    public synchronized void release() throws InterruptedException {
+    public synchronized void acquire() throws InterruptedException {
         while(this.signal == 0) {
             wait();
         }

@@ -1,11 +1,12 @@
-import MySemaphorPackage.*;
+import DefaultSemaphore.*;
+import java.util.concurrent.Semaphore;
 
-public class AppWithMySemaphor {
+public class AppWithDefaultSemaphore {
     public static void main(String[] argc) {
         // Create Three Semaphores
-        CountingSemaphore s1 = new CountingSemaphore(1);
-        CountingSemaphore s2 = new CountingSemaphore(0);
-        CountingSemaphore s3 = new CountingSemaphore(0);
+        Semaphore s1 = new Semaphore(1);
+        Semaphore s2 = new Semaphore(0);
+        Semaphore s3 = new Semaphore(0);
 
         // repeat times
         int timesRepeat = 10;

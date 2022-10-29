@@ -1,13 +1,14 @@
-package MySemaphorPackage;
+package DefaultSemaphore;
+import java.util.concurrent.Semaphore;
 
-public class MyThread extends Thread{
+public class MyThread extends Thread {
     private String str;
-    private CountingSemaphore s1;
-    private CountingSemaphore s2;
+    private Semaphore s1;
+    private Semaphore s2;
     private int timesRepeat;
 
     // Constructor
-    public MyThread(String str, CountingSemaphore s1, CountingSemaphore s2, int timesRepeat) {
+    public MyThread(String str, Semaphore s1, Semaphore s2, int timesRepeat) {
         super();
         this.str = str;
         this.s1 = s1;
