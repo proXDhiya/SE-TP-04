@@ -21,7 +21,7 @@ public class CountingSemaphore {
 
     // Function to release a signal
     public synchronized void acquire() throws InterruptedException {
-        while(this.signal == 0) {
+        while(this.signal <= 0) {
             wait();
         }
         this.signal--;
